@@ -7,6 +7,7 @@ class Voo{
     private $codigo;
     private $horarioPartida;
     private $horarioChegada;
+    private $disponiveis;
     private Aviao $aviao;
     private Reserva $reserva;
 
@@ -63,5 +64,20 @@ class Voo{
     public function setReserva($reserva)
     {
         $this->reserva = $reserva;
+    }
+
+    public function setDisponiveis($disponiveis)
+    {
+        $this->disponiveis = $this->aviao->getCapacidade();
+    }
+
+    public function getDisponiveis()
+    {
+        return $this->disponiveis;
+    }
+
+    public function  decrementDispoviveis()
+    {
+        $this->disponiveis = $this->disponiveis - 1;
     }
 }

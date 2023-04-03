@@ -46,6 +46,8 @@ $voo1->setHorarioPartida('18:30');
 $voo1->setHorarioChegada('22:00');
 $voo1->setAviao($aviao);
 $voo1->setReserva($reserva1);
+$voo1->setDisponiveis($aviao->getCapacidade());
+$voo1->decrementDispoviveis();
 var_dump($voo1);
 
 
