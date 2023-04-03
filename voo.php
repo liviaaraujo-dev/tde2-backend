@@ -76,7 +76,7 @@ class Voo{
         return $this->disponiveis;
     }
 
-    public function  decrementDispoviveis()
+    public function  decrementDisponiveis()
     {
         $this->disponiveis = $this->disponiveis - 1;
     }
