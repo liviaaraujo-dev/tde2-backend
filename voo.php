@@ -3,8 +3,7 @@
 require('aviao.php');
 
 class Voo{
-    private $idVoo; 
-    private $codigo;
+    private $idVoo;
     private $horarioPartida;
     private $horarioChegada;
     private $passagensDisponiveis;
@@ -18,15 +17,6 @@ class Voo{
 
     public function setIdVoo($idVoo){
         $this->idVoo = $idVoo;
-
-    }
-
-    public function getCodigo(){
-        return $this->codigo;
-    }
-
-    public function setCodigo($codigo){
-        $this->codigo = $codigo;
     }
 
     public function getHorarioPartida(){
