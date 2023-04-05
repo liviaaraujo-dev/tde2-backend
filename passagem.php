@@ -2,15 +2,15 @@
 
 require('compra.php');
 
-Class Reserva {
-    private $idReserva;
+Class Passagem {
+    private $idPassagem;
     private $codigoAssento;
     private Compra $compra;
 
 
-    public function getIdReserva()
+    public function getIdPassagem()
     {
-        return $this->idReserva;
+        return $this->idPassagem;
     }
 
     
@@ -19,9 +19,9 @@ Class Reserva {
         return $this->codigoAssento;
     }
 
-    public function setIdReserva($idReserva)
+    public function setIdPassagem($idPassagem)
     {
-        $this->idReserva = $idReserva;
+        $this->idPassagem = $idPassagem;
     }
 
   

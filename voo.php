@@ -7,9 +7,9 @@ class Voo{
     private $codigo;
     private $horarioPartida;
     private $horarioChegada;
-    private $disponiveis;
+    private $passagensDisponiveis;
     private Aviao $aviao;
-    private Reserva $reserva;
+    private Passagem $reserva;
 
     
     public function getIdVoo(){
@@ -56,28 +56,28 @@ class Voo{
         $this->aviao = $aviao;
     }
 
-    public function getReserva()
+    public function getPassagem()
     {
-        return $this->reserva;
+        return $this->passagem;
     }
 
-    public function setReserva($reserva)
+    public function setPassagem($passagem)
     {
-        $this->reserva = $reserva;
+        $this->passagem = $passagem;
     }
 
-    public function setDisponiveis($disponiveis)
+    public function setPassagensDisponiveis()
     {
-        $this->disponiveis = $this->aviao->getCapacidade();
+        $this->passagensDisponiveis = $this->aviao->getCapacidade();
     }
 
-    public function getDisponiveis()
+    public function getPassagensDisponiveis()
     {
-        return $this->disponiveis;
+        return $this->passagensDisponiveis;
     }
 
-    public function  decrementDisponiveis()
+    public function  decrementPassagensDisponiveis()
     {
-        $this->disponiveis = $this->disponiveis - 1;
+        $this->passagensDisponiveis = $this->passagensDisponiveis - 1;
     }
 }
