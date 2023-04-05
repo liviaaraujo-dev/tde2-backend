@@ -3,13 +3,13 @@
 require('aviao.php');
 
 class Voo{
-    private $idVoo;
+    private $idVoo; 
     private $codigo;
     private $horarioPartida;
     private $horarioChegada;
     private $passagensDisponiveis;
     private Aviao $aviao;
-    private Passagem $reserva;
+    private Passagem $passagem;
 
     
     public function getIdVoo(){
